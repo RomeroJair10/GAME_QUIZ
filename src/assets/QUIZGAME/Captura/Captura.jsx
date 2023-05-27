@@ -6,6 +6,7 @@ import {v4 as uuidv4} from 'uuid';
 
 
 function App() {
+
     const [listCaptures, setListCaptures] = useState(
       JSON.parse (localStorage.getItem("listCaptures")) || []
       );
@@ -43,7 +44,7 @@ function App() {
                 />`,
     
     
-          confirmButtonText: "Add item",
+          confirmButtonText: "Add Captura",
           showCloseButton: true,
           showCancelButton: true,
           focusConfirm: false,
@@ -53,6 +54,7 @@ function App() {
             const resul= Swal.getPopup().querySelector('#resul').value;
             const resul1= Swal.getPopup().querySelector('#resul1').value;
             const resul2= Swal.getPopup().querySelector('#resul2').value
+            
             if (!pregunt || !resul || !resul1 || !resul2) {
               Swal.showValidationMessage('Please enter an item pregunt');
             }
@@ -60,7 +62,7 @@ function App() {
           },
         })
     
-        if(!value.pregunt || !value.resul || !value.resul1 || !resul2) return
+        if(!value.pregunt || !value.resul || !value.resul1 || !value.resul2) return
     
         const newList = [
           ...listCaptures,

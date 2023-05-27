@@ -1,4 +1,4 @@
-const ListQuestion = ({
+const LisCapture = ({
     item,
 }) => {
 
@@ -13,15 +13,15 @@ const ListQuestion = ({
         {"¿"}{pregunt}{"?"}
         </div>
         <div className="col-3 col-md-3 text-start">
-          {<input type="radio" name={id} value="true"/>}{"A):"}{resul}{<br/>}
+          <input type="radio" name={id} id={id} value="resul" required=""/>{"A):"}{resul}{<br/>}
 
-          {<input type="radio" name={id} value="true"/>}{"B:"}{resul1}{<br/>}
+          <input type="radio" name={id} id={id} value="resul1" required=""/>{"B:"}{resul1}{<br/>}
 
-          {<input type="radio" name={id} value="true"/>}{"C):"}{resul2}{<br/>}
+          <input type="radio" name={id} id={id} value="resul2" required=""/>{"C):"}{resul2}{<br/>}
           {<hr/>}
         </div>
       </div>
   );
 }
 
-export default ListQuestion
+export default LisCapture

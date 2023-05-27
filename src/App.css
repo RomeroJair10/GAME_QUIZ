@@ -1,0 +1,8 @@
+body{
+    background-image: url('.src/assets/Imagen/galaxia.gif');
+    background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+}

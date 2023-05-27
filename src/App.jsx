@@ -1,3 +1,5 @@
+import "/src/App.css"
+
 function App() {
 
   return (
@@ -6,13 +8,13 @@ function App() {
         <div className="col-2"></div>
         <div className="col">
           <h1>CAPTURA PR</h1>
-          <a href="add.html" class="btn btn-outline-info btn-sm mt-1 me-1">
+          <a href="../Add.html" class="btn btn-outline-info btn-sm mt-1 me-1">
             PREGUNTAS
             </a>
         </div>
         <div className="col">
           <h1>JUEGO</h1>
-          <a href="juego.html" class="btn btn-outline-danger btn-sm mt-1 me-1">
+          <a href="../Juego.html" class="btn btn-outline-danger btn-sm mt-1 me-1">
             JUGAR
             </a>
         </div>
